@@ -1,11 +1,13 @@
 /* root styles */
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
     
   }
 body{
     width: 100vw;
     overflow-x: hidden;
+    overflow: hidden;
 
 }
 :root {
@@ -333,7 +335,7 @@ footer{
     nav .menu.cross .menu-bar3{
         transform-origin: center center;
         
-        transform: rotate(-405deg) translateY(-12px);
+        transform: rotate(-45deg) translateY(-12px);
     }
     nav .menu.cross{
         transform: translateX(8px);
