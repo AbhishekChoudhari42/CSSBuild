@@ -15,7 +15,7 @@ body{
     --dark: #111;
     --dark1: #222;
     --dark2:#333;
-    --dark3:#999;
+    --dark3:  #999;
 
     --light: #fff;
     --light1:#eee;
@@ -125,14 +125,16 @@ main .display{
 
 .display .copy{
     padding: 0.5rem 1rem;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 1px;
     border-radius: 4px;
     position: absolute;
-    background-color: var(--dark1);
-    color: var(--light2);
-    top: 0;
+    background-color: var(--blue);
+    color: var(--light1);
+    cursor: pointer;
+    bottom: 0;
     left: 0;
+    margin: 0.5rem 0.5rem 0 0 ;
 }
 nav .menu{
     display: none;
@@ -278,7 +280,7 @@ footer{
   }
 
 .popup{
-
+    display: none;
     position: fixed;
     z-index: 90;
     top: 50px;
@@ -290,7 +292,9 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    transition: 0.5s;
 }
+
 .copy-code h2{
    
     width: 100%;
@@ -299,11 +303,20 @@ footer{
     color: var(--dark1);
 
 }
+.popup{
+    /* opacity: 0; */
+    transform: translateX(-100%);
+}
+.popup.show{
+    opacity: 1;
+    transform: translateX(0%);
 
+}
 .popup .copy-code{
 
     height:fit-content;
     width: 100%;
+    max-width: 500px;
     background-color: var(--light1);
     border-radius: 16px;
 
@@ -312,12 +325,18 @@ footer{
     padding: 1rem;
 
 }
+
 code{
+    width: 100%;
     padding: 0.5rem;
     border-radius: 8px;
     margin-top: 1rem;
     background-color: var(--light);
+    color: var(--dark1);
     display: inline-block;
+}
+code span{
+    margin-left: 1rem;
 }
 .copy-code button{
     margin-top: 1rem;
@@ -328,19 +347,25 @@ code{
     font-size: medium;
     outline: none;
     border: none;
-    background-color: var(--blue);
+    background-color: var(--red);
     color: var(--light);
 }
 .buttons{
     width: 100%;
     justify-content: space-around;
+    
+}
+button{
+    cursor: pointer;
 }
 .buttons button:nth-child(2)
 {
-margin-left: 1rem;
-background-color: var(--red);
+    margin-left: 1rem;
+background-color: var(--blue);
 
 }
+
+
 
   /* media queries */
 
