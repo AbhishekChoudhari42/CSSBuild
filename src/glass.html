@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic CSS Generator</title>
+    <title>Glass Generator</title>
 
         <!-- styles -->
         <link rel="stylesheet" href="./css/main.css">
@@ -12,6 +12,7 @@
         <!-- scripts -->
         <script defer src="./javascript/main.js"></script>
         <script defer src="./javascript/navbar.js"></script>
+        <script defer src="./javascript/glass.js"></script>
 </head>
 <body>
 
@@ -45,11 +46,12 @@
 
 <main>
 
-    <div class="display flex-r shadow">
-        <div class="code">
-            Code >
-        </div>
-        <div class="element">
+    <div  class="display flex-r shadow">
+
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+
+        <div class="element glass">
             <!-- empty div -->
         </div>
     </div>
@@ -60,31 +62,39 @@
 
 <div class="controls flex-r flex-c">
     <div class="range ">
-        <div class="title ">
-            Title
+        <div class="title flex-r ">
+            Glassmorphism 
+            <div class="code">
+                Code
+            </div>
         </div>
     </div>
-   
     <div class="range flex-r shadow">
-        <label for="">Range  </label>
-        <input type="range">
-        <div class="output">100</div>
+        <label for="">Size : </label>
+        <input min="100" max="350" type="range" id="size">
+        <div class="output">30px</div>
+    </div>
+    <!-- <div class="range flex-r shadow">
+        <label for="">Border-radius : </label>
+        <input min="0" max="100" type="range" id="radius">
+        <div class="output">30px</div>
+    </div> -->
+    <div class="range flex-r shadow">
+        <label for="">Blur :</label>
+        <input type="range" id="blur">
+        <div class="output">30px</div>
     </div>
     <title>back</title>
     <div class="range flex-r shadow">
-        <label for="">Range  </label>
-        <input type="range">
-        <div class="output">100</div>
+        <label for="">Opacity :</label>
+        <input type="range"  id="opacity">
+        <div class="output">100%</div>
     </div>
     
+
     <div class="range flex-r shadow">
-        <label for="">Range  </label>
-        <input type="range">
-        <div class="output">100</div>
-    </div>
-    <div class="range flex-r shadow">
-        <label for="">Range  </label>
-        <input type="range">
+        <label for="">Color :  </label>
+        <input type="color" id="color">
         <div class="output">100</div>
     </div>
 
@@ -99,7 +109,7 @@
 <div class="popup">
     <div class="copy-code flex-r">
         <h2 class="flex-r">CSS Code</h2>
-        <code>
+        <code class="css">
             element{<br><br>
                 <span>position: relative;</span> <br>
                <span>z-index: 10;</span> <br>
@@ -116,7 +126,7 @@
               }
         </code>
         <div class="buttons flex-r">
-            <button id="cancel-button">Back</button>
+            <button id="cancel-button"> Back </button>
             <button id="copy-button">Copy</button>
 
         </div>

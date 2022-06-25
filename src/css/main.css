@@ -25,7 +25,21 @@ body{
     --red:#ff1414;
 
   }
-  
+  :root {
+    
+    --light: #111;
+    --light1: #222;
+    --light2:#333;
+    --light3:  #999;
+
+    --dark: #fff;
+    --dark1:#eee;
+    --dark2: #ccc;
+    --dark3:#aaa;
+    --blue:#03a6ff;
+    --red:#ff1414;
+
+  }
 
 
 
@@ -64,8 +78,8 @@ nav{
     height: 50px;
     width: 100%;
     position: relative;
-    /* background-color: var(--light1); */
-    /* border-bottom: 1px solid var(--dark3) ; */
+    background-color: var(--light);
+   
     justify-content: space-between;
     position: relative;
     z-index: 100;
@@ -95,7 +109,10 @@ nav{
     color: var(--dark2);
     
 }
-
+.glass{
+    border-radius:20px;
+    border: 1px solid #5555;
+}
 
 
 /* main section */
@@ -115,27 +132,82 @@ main{
 
 main .display{
     position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
     justify-content: center;
     background-color: var(--light);
     border-radius: 10px;
+    overflow: hidden;
+    background-color: #111;
     
 }
-
-.display .copy{
-    padding: 0.5rem 1rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-    border-radius: 4px;
+/* glass */
+.blob{
+    top: 30px;
+    left: 25%;
+    width: 200px;
+    height: 200px;
     position: absolute;
+    /* z-index: 10; */
+    background-color: #111;
+    border-radius: 200px;
+    /* background: rgb(255,24,184); */
+    background: linear-gradient(59deg, rgba(255,24,184,1) 0%, rgba(0,116,255,1) 100%);
+    box-shadow: 0 2px ;
+    animation: blobs 10s infinite linear;
+
+}
+
+
+    @keyframes blobs {
+    0%{
+        transform: rotate(0);
+    }
+    
+    100%{
+        transform: rotate(360deg);
+
+    }
+}
+.blob2{
+    top: 60%;
+    left: 55%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-color: #111;
+    border-radius: 200px;
+    background: rgb(131,58,180);
+    animation: blobs 10s infinite linear;
+z-index: 10;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.glass{
+    z-index: 10;
+}
+
+.title{
+    justify-content: space-between;
+}
+ .code{
+    padding: 0.2rem 0.6rem;
+    font-weight: 500;
+    /* letter-spacing: 1px; */
+    border-radius: 4px;
+    /* position: absolute; */
     background-color: var(--blue);
     color: var(--light1);
     cursor: pointer;
-    bottom: 0;
-    left: 0;
-    margin: 0.5rem 0.5rem 0 0 ;
+    /* bottom: 0; */
+    /* left: 0; */
+    color: #fff;
+    font-size: medium;
+    /* box-shadow: 0 1px 6px var(--dark1); */
+
+    /* margin: 0  0 0.5rem  0.5rem ; */
 }
+
 nav .menu{
     display: none;
 
@@ -145,13 +217,14 @@ main .element{
     width:100px;
     height: 100px;
     background-color: var(--dark2);
+    /* border: 2px solid white; */
 }
 /* controls */
 
 .controls{
 
     background-color: var(--light1);
-    width: 32%;
+    width: 34%;
     height: 100%;
     padding: 1rem;
     overflow-y: scroll;
@@ -242,6 +315,17 @@ main .element{
     margin-left: 0.5rem;
     border-radius: 5px;
 
+  }
+  label{
+   white-space: nowrap;
+    /* width: 100%; */
+  }
+  /* color */
+
+  input[type=color]{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
   }
 
 /* scrollbar */
@@ -348,15 +432,18 @@ code span{
     outline: none;
     border: none;
     background-color: var(--red);
-    color: var(--light);
+   color: #fff;
+
 }
 .buttons{
     width: 100%;
     justify-content: space-around;
+    color: #fff;
     
 }
 button{
     cursor: pointer;
+    color: #fff;
 }
 .buttons button:nth-child(2)
 {
@@ -370,7 +457,7 @@ background-color: var(--blue);
   /* media queries */
 
 
-@media (max-width:720px){
+@media (max-width:880px){
     
     /* navigation */
 

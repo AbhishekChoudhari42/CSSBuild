@@ -7,7 +7,7 @@ $('#cancel-button').onclick = function(){
     $('.popup').classList.remove('show') 
 }
 
-$('.display .copy').onclick = function(){
-    console.log('copy')
+$('.code').onclick = function(){
+    
     $('.popup').classList.add('show')
 }
