@@ -170,6 +170,7 @@ main .display{
 
     }
 }
+
 .blob2{
     top: 60%;
     left: 55%;
@@ -180,9 +181,10 @@ main .display{
     border-radius: 200px;
     background: rgb(131,58,180);
     animation: blobs 10s infinite linear;
-z-index: 10;
+    z-index: 10;
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
+
 .glass{
     z-index: 10;
 }
@@ -190,7 +192,8 @@ z-index: 10;
 .title{
     justify-content: space-between;
 }
- .code{
+
+.code{
     padding: 0.2rem 0.6rem;
     font-weight: 500;
     /* letter-spacing: 1px; */
@@ -222,18 +225,14 @@ main .element{
 /* controls */
 
 .controls{
-
     background-color: var(--light1);
     width: 34%;
     height: 100%;
     padding: 1rem;
     overflow-y: scroll;
     scroll-behavior: smooth;
-
     position: relative;
     z-index: 10;
-
-
 }
 
 
@@ -267,6 +266,7 @@ main .element{
     display: inline;
     font-size: 0.9rem;
 }
+
 .title{
     color: var(--dark1);
     font-weight: 600;
@@ -282,10 +282,8 @@ main .element{
   background: var(--light1);
   outline: none;
   margin-left: 0.5rem;
-
- 
- 
 }
+
 .range input::-webkit-slider-thumb {
     -webkit-appearance: none; 
     appearance: none;
@@ -296,18 +294,20 @@ main .element{
     transition: 0.5s;
     cursor: pointer;
 
-  }
-  .range input::-webkit-slider-thumb:hover{
+}
+
+.range input::-webkit-slider-thumb:hover{
     background-color: var(--dark2);
-  }
-  .range input::-moz-range-thumb {
+}
+
+.range input::-moz-range-thumb {
     width: 16px; 
     height: 16px; 
     background: var(--dark3); 
     cursor: pointer;
-  }
+}
 
-  .range .output{
+.range .output{
 
     padding: 0.5rem;
     background: var(--light1);
@@ -315,36 +315,37 @@ main .element{
     margin-left: 0.5rem;
     border-radius: 5px;
 
-  }
-  label{
+}
+  
+label{
    white-space: nowrap;
     /* width: 100%; */
-  }
+}
   /* color */
 
-  input[type=color]{
+input[type=color]{
     width: 30px;
     height: 30px;
     border: 1px solid white;
-  }
+}
 
 /* scrollbar */
-  ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 8px;
     cursor: pointer;
 
-  }
+}
 
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: var(--light1);
-  }
+}
 
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: var(--light3);
     transition: 1s;
     cursor: pointer;
-    
-  }
+
+}
   
   
   ::-webkit-scrollbar-thumb:hover {
@@ -422,6 +423,7 @@ code{
 code span{
     margin-left: 1rem;
 }
+
 .copy-code button{
     margin-top: 1rem;
     width: 100%;
@@ -432,19 +434,22 @@ code span{
     outline: none;
     border: none;
     background-color: var(--red);
-   color: #fff;
+    color: #fff;
 
 }
+
 .buttons{
     width: 100%;
     justify-content: space-around;
     color: #fff;
     
 }
+
 button{
     cursor: pointer;
     color: #fff;
 }
+
 .buttons button:nth-child(2)
 {
     margin-left: 1rem;
@@ -503,6 +508,20 @@ background-color: var(--blue);
     }
     nav .menu-bar{
         transition: 0.6s;
+    }
+    .blob1{
+        top: 8%;
+        left: 25%;
+        width: 80px;
+        height: 80px;
+    }
+    .blob2{
+    
+        bottom: 12%;
+        right: 10%;
+        width: 80px;
+        height: 80px;
+    
     }
     nav .menu-bar.cross{
         
