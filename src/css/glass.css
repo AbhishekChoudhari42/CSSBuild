@@ -1,0 +1,41 @@
+.blob{
+    top: 75px;
+    left: 25%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 200px;
+    background: linear-gradient(59deg, rgba(255,24,184,1) 0%, rgba(0,116,255,1) 100%);
+    animation: blobs 10s infinite linear;
+
+}
+
+
+    @keyframes blobs {
+    0%{
+        transform: rotate(0);
+    }
+    
+    100%{
+        transform: rotate(360deg);
+
+    }
+}
+
+.blob2{
+    top: 60%;
+    left: 55%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-color: #111;
+    border-radius: 200px;
+    background: rgb(131,58,180);
+    animation: blobs 10s infinite linear;
+    z-index: 10;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.glass{
+    z-index: 10;
+}

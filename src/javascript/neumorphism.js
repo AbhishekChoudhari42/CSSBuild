@@ -12,7 +12,10 @@
         copy : 'copy',
         size : '100' ,
         radius : '10',
-        
+        backgroundColor : '#fff',
+        distance:'5',
+        intensityBlack:'#636363',
+        intensityWhite:'fff'
 
     }
     function opacityConvert(op)
