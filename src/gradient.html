@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/gradient.css">
+<script defer src="./javascript/gradient.js"></script>
+</head>
+
+<body>
+    <!-- navigation -->
+
+<nav class="flex-r ">
+    
+    <h2 class="logo">
+        CSS Craft
+    </h2>
+
+    <ul class="flex-r nav-links ">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Tools</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+
+    <div class="menu flex-r flex-c">
+        <div class="menu-bar menu-bar1"></div>
+        <div class="menu-bar menu-bar2"></div>
+        <div class="menu-bar menu-bar3"></div>
+    </div>
+
+
+</nav>
+
+
+<div class="main-container flex-r">
+
+    <div class="container flex-r flex-c" >
+        <div class="gradient">
+            <div class="gd-background">
+
+            </div>
+        </div>
+        <div id="colors">
+            <div class="color-controls">
+                <span>Choose Color : <input type="color"></span>
+                <button id="add-new-color">Add</button>
+            </div>
+            <div class="color-palette flex-r">
+               
+                <!-- <div class="color">
+
+                </div> -->
+            </div>
+
+           <button class="color" id="color-add"><span>+</span> </button>
+           
+          
+        </div>
+
+
+        <div class="type flex-r">
+            <button id="linear">Linear</button>
+            <button id="radial">Radial</button>
+            <button id="conical">Conical</button>
+        </div>
+
+        <div class="range flex-r shadow">
+            <label  for="">Angle : </label>
+            <input min="0" max="360"   type="range" id="size">
+            <div id="sizeOutput" class="output">30px</div>
+        </div>
+        <div class="range flex-r shadow">
+            <label  for="">Smooth : </label>
+            <input min="0" max="100"   type="range" id="size">
+            <div id="sizeOutput" class="output">30px</div>
+        </div>
+    </div>
+
+</div>
+<footer>
+
+</footer>
+
+
+</body>
+</html>
