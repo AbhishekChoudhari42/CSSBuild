@@ -30,8 +30,8 @@ margin-bottom: 1.5rem;
 .gd-background{
     position: absolute;
     content: "";
-    width: 98%;
-    height: 10%;
+    width: 94%;
+    height: 30%;
 
     left: 50%;
     transform: translateX(-50%);
@@ -58,15 +58,27 @@ margin-bottom: 1.5rem;
 .range{
     z-index: 1;
 }
+
 .color{
     width: 40px;
     height: 40px;
-    background-color: blue;
     border-radius: 6px;
     margin:0.4rem  0 0.4rem 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+.color:hover{
+    border: 2px dotted var(--dark1);
+    box-shadow: 2px 2px 3px #1111;
 }
 #color-add{
-   
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    margin:0.4rem  0 0.4rem 0.4rem;
+ 
+    cursor: pointer;
     background-color: var(--light);
     border: 2px dotted var(--dark1) ;
     color: var(--dark1);
@@ -76,8 +88,19 @@ margin-bottom: 1.5rem;
     font-size: 2rem;
     transition: 0.5s;
 
+    position: absolute;
+    right: 0.5rem;
+    top: 0;
+
 
 }
+.color-palette{
+    width: calc(100% - 40px - 1rem);
+}
+
+
+
+
 #color-add span{
     transition: 0.5s;
 }
@@ -103,7 +126,6 @@ border: 2px solid var(--dark1);
     height: fit-content;
     z-index: 2;
     padding: 1rem 1rem;
-    /* display: none; */
     pointer-events: none;
     opacity: 0;
     transition: 0.5s ease-out;
@@ -162,3 +184,123 @@ border: 2px solid var(--dark1);
 
 
 }
+
+
+
+
+.color-change{
+    top: 0px;
+    left: 50%;
+    padding: 0;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 100%;
+    background-color: var(--light);
+    border: 1px solid var(--light1);
+    border-radius: 8px;
+    backdrop-filter: blur(40px);
+    box-shadow: 2px 2px 5px #1111;
+    height: fit-content;
+    z-index: 3;
+    padding: 1rem 1rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    
+
+}
+.color-change.display-color-change{
+    top: 60px;
+    transition: 1s;
+    opacity: 1;
+    pointer-events: all;
+    /* display: block; */
+}
+
+.color-change span{
+    background-color: var(--light1);
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.color-change button{
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    border: none;
+    background-color: var(--dark1);
+    color:var(--light);
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+.color-change #remove{
+    background-color: var(--red);
+}
+
+.up{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding:0;
+    cursor: pointer;
+
+}
+.up span{
+    margin-top: 0;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+.up span h3{
+   margin: 0;
+   padding: 0;
+    transform: rotate(45deg);
+    font-weight: 400;
+}
+#remove{
+    transition: 1s;
+}
+
+#remove.wobble{
+    animation: wob 0.5s ease;
+    opacity: 0.5;
+
+}
+@keyframes wob {
+    0%{
+        transform: translateX(-10px);
+    }
+    20%{
+        transform: translateX(10px);
+    }
+    40%{
+        transform: translateX(-10px);
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.type button.active{
+    background-color: var(--dark1);
+    color: var(--light);
+}
+
+
+
+
+
