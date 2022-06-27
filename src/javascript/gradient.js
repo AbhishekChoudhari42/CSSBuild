@@ -31,17 +31,32 @@ function render(){
     });
     let gradientColor 
     $('.gradient').style.background = 'black'
+    console.log(gradient)
     if(state.type == 'linear'){
          gradientColor = `linear-gradient(${state.angle}deg ${gradient})`;
 
-    }
+    }else
     if(state.type == 'radial'){
+        
          gradientColor = `radial-gradient(closest-side${gradient})`;
 
-    }
+    }else
     if(state.type == 'conical'){
-        gradient.slice(0,1)
-        gradientColor = `conical-gradient(${gradient})`;
+        gradient = ''
+        let count = 0
+        let sub = 100/((state.colorArray.length)-1)
+        state.colorArray.forEach(element => {
+
+            // gradient += ','
+            gradient +=`,${element} ${Math.round(count*sub)}%`
+            count++
+             
+        });
+
+        result = gradient.slice(1)
+        console.log('colou')
+        console.log(result)
+        gradientColor = `conic-gradient(${result})`;
 
    }
     
