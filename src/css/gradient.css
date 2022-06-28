@@ -299,7 +299,21 @@ border: 2px solid var(--dark1);
     background-color: var(--dark1);
     color: var(--light);
 }
+#angleShow{
+    display: flex;
+    transition: .5s;
 
+}
+.container{
+    position: relative;
+}
+#angleShow.remove{
+    position: absolute;
+
+    top: 65%;
+    opacity: 0;
+    transform: translateY(70%);
+}
 
 
 
