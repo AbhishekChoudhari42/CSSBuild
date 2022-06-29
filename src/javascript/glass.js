@@ -5,6 +5,7 @@
         return generated
 
     }
+
     var state = {
         opacity:50,
         blur:'10',
@@ -15,6 +16,8 @@
         
 
     }
+
+
     function opacityConvert(op)
     {
         let percentage = op/100;
@@ -25,6 +28,7 @@
 function min(a,b){
     return a>=b?b:a
 }
+
 let size = 100;
 
  function maxSizeUpdate(){
@@ -62,6 +66,7 @@ function render(state){
 
     }
     render(state);
+    
     $('#size').oninput = function(){
         state.size = `${$('#size').value}`
         // state.copy = 'copy';

@@ -13,7 +13,8 @@ state = {
     smooth : 1,
     angle : 90,
     type : 'linear',
-    interpolation: '1'
+    interpolation: '1',
+    code:''
 
 }
 
@@ -61,8 +62,10 @@ function render(){
 
    }
     
+   state.code = gradientColor
+   $('.css-code').innerHTML = 'background : '+gradientColor+';'
     
-    
+  
     
     $('.gradient').style.background = gradientColor
     $('.gd-background').style.background = gradientColor
@@ -382,3 +385,53 @@ function h_s_lToHex(h, s, l) {
     return value 
 
   }
+
+
+let flag = 1
+$('.code').onclick = () =>{
+    
+     // var clipboard = new ClipboardJS('.btn');
+     
+
+
+
+
+    if(flag){
+
+        $('.code').innerHTML = 'cancel'
+        flag = 0
+        $('.code-display').classList.add('active')
+
+
+        
+        
+    }
+    else{
+        
+        $('.code').innerHTML = 'copy'
+        flag = 1
+        $('.code-display').classList.remove('active')
+        
+    }
+
+
+}
+
+
+
+$('.copy-code').onclick = () =>{
+   
+    navigator.clipboard.writeText('background :'+state.code+';');
+    
+    $('.copy-code').innerHTML = 'copied'
+
+    setTimeout(() => {
+        $('.copy-code').innerHTML = 'copy'
+    }, 1000);
+
+}
+
+
+
+
+
