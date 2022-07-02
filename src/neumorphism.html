@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glass Generator</title>
+    <title>Neumorphism </title>
 
         <!-- styles -->
         <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/neumorphism.css">
 
         <!-- scripts -->
         <script defer src="./javascript/main.js"></script>
         <script defer src="./javascript/navbar.js"></script>
-        <script defer src="./javascript/glass.js"></script>
+        <script defer src="./javascript/neumorphism.js"></script>
 </head>
 <body>
 
@@ -80,23 +81,33 @@
         <input min="0" max="40" type="range" id="blur">
         <div id="blurOutput" class="output">30px</div>
     </div>
-    <title>back</title>
+   
     <div class="range flex-r shadow">
-        <label for="">Opacity :</label>
-        <input min="0" max="100" type="range"  id="opacity">
-        <div id="opacityOutput" class="output">100%</div>
+        <label for="">Border radius :</label>
+        <input min="0" max="100" type="range"  id="radius">
+        <div id="radiusOutput" class="output">100%</div>
+    </div>
+
+    <div class="range flex-r shadow">
+        <label for="">Distance :</label>
+        <input min="0" max="20" type="range"  id="distance">
+        <div id="distanceOutput" class="output">100%</div>
+    </div>
+
+    <div class="range flex-r shadow">
+        <label for="">Itensity :</label>
+        <input min="0" max="10" type="range"  id="intensity">
+        <div id="intensityOutput" class="output">100%</div>
     </div>
     
 
     <div class="range flex-r shadow">
-        <label for="">Element Color :  </label>
+        <label for="">Background Color : </label>
         <input  style="margin:0 5px;" type="color" id="color">
         <div id="colorOutput"  style="margin-left: auto;" class="output">100</div>
-
-        <!-- <label style="margin-left: auto;" for="">Background :  </label>
-        <input type="color" id="backgroundColor">
-        <div id="backgroundColorOutput" class="output">100</div> -->
     </div>
+
+
 
     
 
@@ -135,8 +146,3 @@
 </div>
 </body>
 </html>
-  <!-- <div class="range flex-r shadow">
-        <label for="">Border-radius : </label>
-        <input min="0" max="100" type="range" id="radius">
-        <div class="output">30px</div>
-    </div> -->

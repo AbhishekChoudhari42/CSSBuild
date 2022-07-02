@@ -6,17 +6,13 @@
 
     }
     var state = {
-        opacity:50,
         blur:'10',
-        color:'#111111',
-        copy : 'copy',
-        size : '100' ,
+        color:'#f1f1f1',
+        light: 'l1',
+        size : '150' ,
         radius : '10',
-        backgroundColor : '#fff',
         distance:'5',
-        intensityBlack:'#636363',
-        intensityWhite:'fff'
-
+        intensity:5
     }
     function opacityConvert(op)
     {
@@ -40,76 +36,157 @@ document.onresize = maxSizeUpdate
 
 
 function render(state){
+
+
         // background blur
         $('.glass').style.backdropFilter = `blur(${state.blur}px)`;
-        $('#blurOutput').innerHTML = state.blur+'px'
+        $('#blur')
+        
+        
+        // border radius
+        $('.glass').style.borderRadius = `${state.radius}px`
         
        
         // background colour
-        var bgColor = state.color + `${opacityConvert(state.opacity)}`;
+        var bgColor = state.color + `ff`;
 
         $('.glass').style.background = bgColor;
-        $('#opacityOutput').innerHTML = state.opacity + '%'
+        $('#bg').style.background = bgColor;
         $('#colorOutput').innerHTML = bgColor 
-        // $('#backgroundColorOutput').innerHTML = state.backgroundColor 
 
         // size
        
         size = state.size || size
         $('.glass').style.height = size + "px";
         $('.glass').style.width = size + "px";
-        $('#sizeOutput').innerHTML = size + "px"
         $('.css').innerHTML = ` background : ${ bgColor}; <br> backdrop-filter : ${state.blur}; <br> border: 1px solid rgba(255, 255, 255, 0.125);`
+
+
+        // box shadow 
+        document.querySelectorAll('.light').forEach(element =>{
+           if(element.id == state.light){
+            element.classList.add('add-light')
+           }else{
+            element.classList.remove('add-light')
+
+           }
+        })        
+
+
+
+let distance = [4]
+
+let intensity = state.intensity.toString(16)
+        
+
+        
+if(state.light == 'l1'){
+    distance[0] = -1*state.distance
+    distance[1] = -1*state.distance
+
+    distance[2] = state.distance
+    distance[3] = state.distance
+}else if(state.light == 'l2'){
+    distance[0] = state.distance
+    distance[1] = -1*state.distance
+
+    distance[2] = -1*state.distance
+    distance[3] = state.distance
+}
+else if(state.light == 'l4'){
+    distance[0] = state.distance
+    distance[1] = state.distance
+
+    distance[2] = -1*state.distance
+    distance[3] = -1*state.distance
+}else{
+    distance[0] = -1*state.distance
+    distance[1] = state.distance
+
+    distance[2] = state.distance
+    distance[3] = -1*state.distance
+}
+
+       
+        let inset = ""
+
+        $('.glass').style.boxShadow = `${inset} ${distance[0]}px  ${distance[1]}px ${state.blur}px #fff${intensity},
+        ${inset} ${distance[2]}px  ${distance[3]}px ${state.blur}px #000${intensity} `
+
+
+        // values
+
+        $('#intensity').value = state.intensity
+        $('#distance').value = state.distance
+        $('#color').value = state.color
+        $('#size').value = state.size
+        $('#radius').value = state.radius
+        $('#blur').value = state.blur
+
+
+        $('#radiusOutput').innerHTML = state.radius+'px'
+        $('#distanceOutput').innerHTML = state.distance + "px"
+        $('#intensityOutput').innerHTML = state.intensity
+        $('#sizeOutput').innerHTML = size + "px"
+        $('#blurOutput').innerHTML = state.blur + "px"
+
+
+
+
+
+
+
+      
+
+
 
  
 
     }
     render(state);
+
+
+
+    // State Update
+
     $('#size').oninput = function(){
         state.size = `${$('#size').value}`
-        // state.copy = 'copy';
         render(state);
     }
-    // $('#radius').oninput = function(){
-    //     state.radius = `${$('#radius').value}`
-    //     state.size = `${$('#size').value + 1}`
-    //         state.size = `${$('#size').value + 1}`
-  
-
-    //     // state.copy = 'copy';
-    //     render(state);
-    // }
+    $('#radius').oninput = function(){
+        state.radius = `${$('#radius').value}`
+        render(state);
+    }
     $('#blur').oninput = function(){
         state.blur = $('#blur').value
-        // state.copy = 'copy';
         render(state);
     }
-    $('#opacity').oninput = function(){
-       state.opacity = `${$('#opacity').value}`
-    //    state.copy = 'copy';
-       render(state);
+    $('#distance').oninput = function(){
+        state.distance = $('#distance').value
+        render(state);
     }
+    $('#intensity').oninput = function(){
+        state.intensity = $('#intensity').value
+        render(state);
+    }
+
     $('#color').oninput = function(){
         state.color =  $('#color').value
-        // state.copy = 'copy';
         render(state);
     }
-    // $('#backgroundColor').oninput = function(){
-    //     state.color =  $('#backgroundColor').value
-    //     $('main .display').style.background = $('#backgroundColor').value
-    //     // state.copy = 'copy';
-    //     render(state);
-    // }
+  
+
+
+    document.querySelectorAll('.light').forEach(element =>{
+        element.onclick = (e) =>{
+            state.light = e.target.id
+            console.log(state.light)
+
+            render(state)
 
 
 
+        }
+    })
 
-    // $('.copy').onclick = function(){
-        // var clipboard = new ClipboardJS('.btn');
-        // var bgColor = state.color + `${opacityConvert(state.opacity)}`;
-        // state.copy = 'copied';
-        // render(state);
-        // let string = "background :"+bgColor+"; backdrop-filter : "+state.blur+"; border: 1px solid rgba(255, 255, 255, 0.125);"
-        // navigator.clipboard.writeText(string);
-    // }
-    
+
