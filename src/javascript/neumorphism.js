@@ -33,8 +33,8 @@ let size = 100;
 }
 document.onload = maxSizeUpdate
 document.onresize = maxSizeUpdate
-
-
+let code = ''
+let shadow
 function render(state){
 
 
@@ -130,6 +130,27 @@ else if(state.light == 'l4'){
         $('#sizeOutput').innerHTML = size + "px"
         $('#blurOutput').innerHTML = state.blur + "px"
 
+        shadow = `${inset} ${distance[0]}px  ${distance[1]}px ${state.blur}px #fff${intensity},
+        ${inset} ${distance[2]}px  ${distance[3]}px ${state.blur}px #000${intensity} `
+        code = `
+        .element{<br><br>
+             
+           <span> background-color: ${state.color};</span>
+            <br>
+           
+          
+            <span>box-shadow:${shadow};</span>
+
+            <br><br>
+            
+          }
+        </span}`
+        $('code').innerHTML = code
+
+            
+
+
+
 
 
 
@@ -188,5 +209,12 @@ else if(state.light == 'l4'){
 
         }
     })
+let codeCopy = `.element{ background-color :${state.color} ; box-shadow:${shadow}}`
+
+
+$('#copy-button').onclick = () =>{
+    navigator.clipboard.writeText(codeCopy);
+
+}
 
 
