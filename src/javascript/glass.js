@@ -38,13 +38,14 @@ let size = 100;
 }
 document.onload = maxSizeUpdate
 document.onresize = maxSizeUpdate
-
+let css
 
 function render(state){
+
         // background blur
         $('.glass').style.backdropFilter = `blur(${state.blur}px)`;
         $('#blurOutput').innerHTML = state.blur+'px'
-        
+
        
         // background colour
         var bgColor = state.color + `${opacityConvert(state.opacity)}`;
@@ -60,8 +61,8 @@ function render(state){
         $('.glass').style.height = size + "px";
         $('.glass').style.width = size + "px";
         $('#sizeOutput').innerHTML = size + "px"
-        $('.css').innerHTML = ` background : ${ bgColor}; <br> backdrop-filter : ${state.blur}; <br> border: 1px solid rgba(255, 255, 255, 0.125);`
-
+        $('.css').innerHTML = ` background : ${ bgColor}; <br> backdrop-filter : blur(${state.blur}px); <br> border: 1px solid rgba(255, 255, 255, 0.125);`
+css = ` background : ${ bgColor};  backdrop-filter : blur(${state.blur}px);  border: 1px solid rgba(255, 255, 255, 0.125);`
  
 
     }
@@ -71,6 +72,12 @@ function render(state){
         state.size = `${$('#size').value}`
         // state.copy = 'copy';
         render(state);
+    }
+
+
+    $('#copy-button').onclick = ()=>{
+        navigator.clipboard.writeText(css);
+        $('.popup').classList.remove('show')
     }
     // $('#radius').oninput = function(){
     //     state.radius = `${$('#radius').value}`

@@ -5,6 +5,7 @@
         return generated
 
     }
+
     var state = {
         blur:'10',
         color:'#f1f1f1',
@@ -14,6 +15,7 @@
         distance:'5',
         intensity:5
     }
+
     function opacityConvert(op)
     {
         let percentage = op/100;
@@ -24,30 +26,31 @@
 function min(a,b){
     return a>=b?b:a
 }
+
 let size = 100;
 
- function maxSizeUpdate(){
+function maxSizeUpdate(){
     let maxSize = min($('.display').clientHeight,$('.display').clientWidth)
     $('#size').setAttribute('max',maxSize+"")
    
 }
+
 document.onload = maxSizeUpdate
 document.onresize = maxSizeUpdate
+
 let code = ''
 let shadow
-function render(state){
 
+function render(state){
 
         // background blur
         $('.glass').style.backdropFilter = `blur(${state.blur}px)`;
         $('#blur')
         
-        
         // border radius
         $('.glass').style.borderRadius = `${state.radius}px`
         
-       
-        // background colour
+       // background colour
         var bgColor = state.color + `ff`;
 
         $('.glass').style.background = bgColor;
@@ -174,18 +177,22 @@ else if(state.light == 'l4'){
         state.size = `${$('#size').value}`
         render(state);
     }
+
     $('#radius').oninput = function(){
         state.radius = `${$('#radius').value}`
         render(state);
     }
+
     $('#blur').oninput = function(){
         state.blur = $('#blur').value
         render(state);
     }
+
     $('#distance').oninput = function(){
         state.distance = $('#distance').value
         render(state);
     }
+
     $('#intensity').oninput = function(){
         state.intensity = $('#intensity').value
         render(state);
@@ -196,8 +203,6 @@ else if(state.light == 'l4'){
         render(state);
     }
   
-
-
     document.querySelectorAll('.light').forEach(element =>{
         element.onclick = (e) =>{
             state.light = e.target.id
@@ -216,5 +221,9 @@ $('#copy-button').onclick = () =>{
     navigator.clipboard.writeText(codeCopy);
 
 }
+
+
+
+
 
 

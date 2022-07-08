@@ -1,0 +1,33 @@
+*{
+    outline:1px solid red;
+}
+.card-container{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 4;
+    grid-gap: 1rem;
+    padding:1rem;
+    width:100%;
+    height:100%;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    max-width: 350px;
+    padding: 1rem;
+}
+
+.image{
+    flex:0.5;
+    width:300px;
+
+}
+.title{
+    flex: 0.3;
+}
+.link-button{
+    flex:0.2;
+}

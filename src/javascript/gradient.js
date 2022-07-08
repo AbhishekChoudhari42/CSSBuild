@@ -33,7 +33,6 @@ function render(){
     });
     let gradientColor 
     $('.gradient').style.background = 'black'
-    console.log(gradient)
     if(state.type == 'linear'){
          gradientColor = `linear-gradient(${state.angle}deg ${gradient})`;
 
