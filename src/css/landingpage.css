@@ -1,6 +1,4 @@
-*{
-    /* outline:1px solid red; */
-}
+
 .card-container{
     display: grid;
     grid-template-columns: 
@@ -21,16 +19,20 @@
     max-width: 350px;
     padding: 1rem;
 
+    outline:1px solid rgba(128, 128, 128, 0.112);
+
     /* outline:1PX SOLID BLUE; */
     border-radius:10px;
 
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.085);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.085);
 }
 
 .image{
     flex:0.5;
     width:300px;
     margin-bottom: 1rem;
+border-radius: 10px;
+    outline:1px solid rgba(128, 128, 128, 0.4);
 
 }
 .title{
@@ -46,7 +48,7 @@
 
     text-decoration: none;
 
-    background:rgb(34, 111, 255);
+    background:var(--blue);
 
     color:white;
 
