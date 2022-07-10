@@ -46,23 +46,36 @@ border-radius: 5px;
     flex: 0.3;
     text-align: left;
     margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+a span{
+    transition: 0.5s;
+    font-weight: 500;
+
+    font-size:large;
 }
 .link-button{
     width:fit-content;
+
     flex:0.2;
     padding: 0.5rem 1rem;
-
+font-weight: 500;
     text-decoration: none;
 
-    background:var(--blue);
+    background:linear-gradient(to bottom, rgb(51, 129, 255) ,var(--blue));
 
     color:white;
 
     border-radius: 0.5rem;
 
-    box-shadow: 5px 0px 10px rgba(0, 0, 255, 0.226);
+    box-shadow: 2px 0px 5px rgba(0, 153, 255, 0.244);
+
+    transition: 1s;
 }
 
 .link-button:hover{
-    transform:scale(1.02);
+    transform:scale(1.05);
+
+
 }
+
