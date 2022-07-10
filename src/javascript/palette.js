@@ -17,7 +17,9 @@ function generatePalette( ){
 
         let colorval = color()
         item.style.background = colorval;
-        item.innerHTML = `<div class='rotate-text'>${colorval}</div>`;
+        item.setAttribute('id',colorval);
+        item.setAttribute('name',colorval);
+        item.innerHTML = `<div id=${colorval} class='rotate-text'>${colorval}</div>`;
         array.push(colorval)
         
         })
@@ -31,7 +33,20 @@ document.querySelector('#generate').onclick = function(){
 
 }
 
+document.querySelectorAll('.palette-color').forEach(item =>{
 
+    item.onclick = function(e){
+        console.log('click')
+        let color = e.target.innerHTML
+
+        navigator.clipboard.writeText(color);
+
+        
+    
+    }
+})
+
+   
 
 
 
