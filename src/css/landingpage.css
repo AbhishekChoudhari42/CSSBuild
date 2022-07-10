@@ -15,8 +15,8 @@
 
 .card{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between; */
+    /* align-items: center; */
     flex-direction: column;
     max-width: 350px;
     padding: 1rem;
@@ -40,7 +40,20 @@
     margin-bottom: 0.5rem;
 }
 .link-button{
-    width:100%;
+    width:fit-content;
     flex:0.2;
+    padding: 0.5rem 1rem;
+
+    text-decoration: none;
+
+    background:blue;
+
+    color:white;
+
+    border-radius: 0.5rem;
+
+    box-shadow: 5px 0px 10px rgba(0, 0, 255, 0.226);
+
+
 
 }
