@@ -24,14 +24,20 @@
     /* outline:1PX SOLID BLUE; */
     border-radius:10px;
 
+ transition: 0.5s;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.085);
 }
 
+.card:hover .image{
+    transform:scale(1.02);
+}
+
 .image{
+    transition: 0.5s;
     flex:0.5;
     width:300px;
     margin-bottom: 1rem;
-border-radius: 10px;
+border-radius: 5px;
     outline:1px solid rgba(128, 128, 128, 0.4);
 
 }
@@ -55,7 +61,8 @@ border-radius: 10px;
     border-radius: 0.5rem;
 
     box-shadow: 5px 0px 10px rgba(0, 0, 255, 0.226);
+}
 
-
-
+.link-button:hover{
+    transform:scale(1.02);
 }
