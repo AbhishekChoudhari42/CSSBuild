@@ -528,22 +528,19 @@ background-color: var(--blue);
 /* Privacy Policy */
 h1{
     font-size:2.2rem;
-    margin-left:10px;
+    margin-left:15px;
 }
 
 h2{
     font-size:1.6rem;
-    margin-left:10px;
+    margin-left:15px;
+   
 }
 
 p{
     font-size:1.2rem;
-/*     font-weight:500; */
-    margin-left:10px;
+    margin-left:15px;
 }
-/* li{
-    font-size:1.2rem;
-    margin-left:10px;
-} */
+
 
 
