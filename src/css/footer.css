@@ -19,7 +19,7 @@ body{
 
 .footer .social{
     text-align:center;
-    padding-bottom: 35px;
+    padding-bottom: 18px;
     color: #f9f9f9;
     align-items:center;
     jusitfy-content: center;
@@ -71,7 +71,7 @@ body{
 }
 
 .footer .copyright{
-    margin-top: 25px;
+    margin-top: 9px;
     text-align: center;
     font-size:16px;
     color:white;
