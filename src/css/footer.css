@@ -21,6 +21,8 @@ body{
     text-align:center;
     padding-bottom: 35px;
     color: #f9f9f9;
+    align-items:center;
+    jusitfy-content: center;
 }
 
 .footer .social a{
