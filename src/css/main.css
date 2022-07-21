@@ -128,7 +128,7 @@ nav{
 }
 
 main{
-    background-color:var(--light1);
+    background-color:var(--light);
     width: calc(100% - 32%);
     height: 100%;
     padding: 1rem 0  1rem 1rem;
