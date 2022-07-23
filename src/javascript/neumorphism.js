@@ -215,13 +215,12 @@ else if(state.light == 'l4'){
         }
     })
 let codeCopy = `.element{ background-color :${state.color} ; box-shadow:${shadow}}`
-
+code = codeCopy
 
 $('#copy-button').onclick = () =>{
-    navigator.clipboard.writeText(codeCopy);
+    navigator.clipboard.writeText(code);
 
 }
-
 
 
 
