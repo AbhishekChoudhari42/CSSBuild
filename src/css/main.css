@@ -128,7 +128,7 @@ nav{
 }
 
 main{
-    background-color:var(--light1);
+    background-color:var(--light);
     width: calc(100% - 32%);
     height: 100%;
     padding: 1rem 0  1rem 1rem;
@@ -524,4 +524,28 @@ background-color: var(--blue);
     }
 
 }
+
+/* Privacy Policy */
+h1{
+    font-size:2.2rem;
+    margin-left:20px;
+}
+
+h2{
+    font-size:1.6rem;
+    margin-left:20px;
+   
+}
+
+p{
+    font-size:1.2rem;
+    margin-left:20px;
+}
+
+h3{
+    font-size:1.4rem;
+    margin-left:20px;
+}
+
+
 
