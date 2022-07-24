@@ -9,7 +9,6 @@
     <meta name="keywords" content="Neumorphism , Glassmorphism , Gradient Selector , Color palette, Random color palette generator, Neumorphism generator, Glassmorphism generator, Gradient generator">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/landingpage.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
    <!-- scripts -->
@@ -40,16 +39,32 @@ padding-top: 50px;
 
 }
 
-footer{
-    position: fixed;
-    z-index: 100;
-    bottom:0;
-    left:0;
-    backdrop-filter: blur(20px);
-
-    background-color: rgba(255, 255, 255, 0.734);
-
+.footer {
+  text-align: center;
+  background: #272d3b
+  padding-top: 10px;
 }
+
+.footer .share {
+  padding-top: 10px;
+}
+
+.footer .share a {
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  background: #eee;
+  color: #272d3b;
+  border-radius: 50%;
+  font-size: 2rem;
+  margin: 0.3rem;
+}
+
+.footer .share a:hover {
+  color: #fff;
+  background: linear-gradient(90deg, #a8baf9, #d59cf9);
+}
+
 </style>
 
 <body>
