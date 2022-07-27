@@ -20,15 +20,49 @@
         <script defer src="./javascript/glass.js"></script>
 </head>
 <body>
+<style>		
+     nav{
+      width: 100vw;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+
+     }
+     .logo{
+      width:200px;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+     }
+     .logo img{
+      width:42px;
+      height:42px;
+     }
+     .logo h2{
+      width: 100%;
+      margin-left: 1rem;
+      font-size: 3rem;  
+      font-weight: 600;
+    }
+	</style>
+	
 
 <!-- navigation -->
-	
-<nav>
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <i class="fa fa-bars"></i>
-      </label>
-      <img src="img/logo.webp" class="logo" alt="logo">
+	<nav>
+      <div class="logo">
+
+        <img src="img/logo.webp" alt="logo">
+        <h2>CSS Craft</h2>
+      </div>
+
+      <div class="ham">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa fa-bars"></i>
+        </label>
+      </div>
+      
+      
       <ul class="nav_links">
         <li><a href="index.html" title="Home">Home</a></li>
         <li><a href="tools.html" title="Tools">Tools</a></li>
@@ -36,6 +70,7 @@
         <li><a href="terms.html" title="Terms">Terms</a></li>
         <li><a href="privacy.html" title="Privacy">Privacy</a></li>
       </ul>
+    
     </nav>
 
 <!-- main section -->
