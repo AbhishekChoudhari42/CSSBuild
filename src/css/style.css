@@ -368,16 +368,14 @@ section {
   z-index: 100;
   transform: translate(181px, 114px);
 }
-}
-
-@media screen and (max-width: 768px) {
-  .slide-content {
+   .slide-content {
     margin: 0 10px;
   }
   .swiper-navBtn {
     display: none;
   }
 }
+
 
 @media screen and (max-width: 414px) {
     .home .content h1 {
