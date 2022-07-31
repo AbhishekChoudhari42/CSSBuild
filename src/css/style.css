@@ -31,15 +31,15 @@
 }
 
 html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  scroll-padding-top: 4rem;
+  /* font-size: 62.5%; */
+  overflow-x: hidden; 
+  scroll-behavior: smooth; 
+   scroll-padding-top: 4rem;
 }
-
+/* 
 section {
   padding: 3rem 9%;
-}
+} */
 
 .heading {
   text-align: center;
@@ -61,7 +61,7 @@ section {
 }
 
 .home {
-  min-height: 89vh;
+  min-height: 91vh;
   text-align: center;
   background: var(--gradient0);
 }
