@@ -61,7 +61,7 @@ section {
 }
 
 .home {
-  min-height: 91vh;
+  min-height: 89vh;
   text-align: center;
   background: var(--gradient0);
 }
@@ -187,7 +187,7 @@ section {
   flex-wrap: wrap;
 }
 
-.footer {
+/* .footer {
   text-align: center;
   background: var(--black);
   padding-top: 10px;
@@ -221,7 +221,7 @@ section {
 
 .footer .credit span {
   color: var(--red);
-}
+} */
 
 /* slider css */
 
@@ -332,7 +332,7 @@ section {
 /* media queries */
 
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .home .content h1 {
     font-size: 8.7rem;
     color: rgb(20, 19, 19);
