@@ -6,6 +6,19 @@
     padding:0;
 }
 
+:root {
+  --black: #272d3b;
+  --red: #f53f8b;
+  --pink: #d59cf9;
+  --blue: #a8baf9;
+  --coral: #b3f670;
+  --light-blue: #dbe3ffff;
+  --light-pink: #f3e0ffff;
+  --gradient1: linear-gradient(90deg, var(--light-blue), var(--light-pink));
+  --gradient: linear-gradient(90deg, var(--blue), var(--pink));
+  --gradient0: linear-gradient(131deg, #dbe3ff, #ffffff, #f3e0ff);
+}
+
 body{
     font-family: "Poppins",sans-serif;
     font-weight: 300;
@@ -84,21 +97,22 @@ body{
   text-align: center;
   background: var(--black);
   padding-top: 10px;
-  margin-top: 50px;
+  margin-top: 63px;
+  height: 150px;
 }
 .footer .share {
   padding-top: 10px;
 }
 
 .footer .share a {
-  height: 4rem;
-  width: 4rem;
-  line-height: 4rem;
-  background: #eee;
-  color: var(--black);
-  border-radius: 50%;
-  font-size: 2rem;
-  margin: 0.3rem;
+    height: 3.4rem;
+    width: 3.4rem;
+    line-height: 60px;
+    background: #eee;
+    color: var(--black);
+    border-radius: 50%;
+    font-size: 1.7rem;
+    margin: 0.3rem;
 }
 
 .footer .share a:hover {
@@ -107,10 +121,10 @@ body{
 }
 
 .footer .credit {
-  color: #eee;
-  padding: 2rem 1rem;
-  font-weight: normal;
-  font-size: 2rem;
+    color: #eee;
+    padding: 8px;
+    font-weight: normal;
+    font-size: 1.5rem;
 }
 
 .footer .credit span {
@@ -119,6 +133,6 @@ body{
 
     @media (max-width: 720px) {
         .footer .credit{
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
        }

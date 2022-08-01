@@ -149,27 +149,27 @@ section {
   text-align: center;
   background: rgba(237, 23, 111, 0.05);
   padding: 1rem;
-  flex: 1 1 30rem;
+  flex: 1 1 3rem;
   cursor: pointer;
-  height: 320px;
+  height: 278px;
   width: 250px;
 }
 
 .about .box-container .box i {
   color: var(--red);
-  font-size: 6rem;
-  padding: 2rem;
+  font-size: 4rem;
+  padding: 1rem;
 }
 
 .about .box-container .box h3 {
   color: var(--black);
-  font-size: 2.8rem;
+  font-size: 1.8rem;
 }
 
 .about .box-container .box p {
   color: #666;
   font-size: 2.3rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .about .box-container .box:hover {
