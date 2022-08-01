@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta tool="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Craft</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    
+    <link rel="shortcut icon" type="image/png/webp" href="img/logo.webp">
+    
+    <meta name="description" content="CSS Crafts consist of CSS Designing tool Generators such as Glassmorphism, Neumorphism and many more">
+
+    <meta name="keywords" content="Neumorphism , Glassmorphism , Gradient Selector , Color palette, Random color palette generator, Neumorphism generator, Glassmorphism generator, Gradient generator">
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/old_style.css" />
+
+    <!-- Navbar css file link  -->
+    <link rel="stylesheet" href="css/nav.css" />
+
+    <!-- Footer css file link -->
+    <link rel="stylesheet" href="css/footer.css">
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <nav>
+        <div class="logo">
+          <a class="logo_link" href="index.html">
+          <img src="img/logo.webp"  alt="logo">
+          </a>
+          <h2>CSS Craft</h2>
+        </div>
+  
+        <div class="ham">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+        <div class="nav-area">
+            <ul class="nav_links">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="tools.html" title="Tools">Tools</a></li>
+                <li><a href="#" title="About">About</a></li>
+                <li><a href="terms.html" title="Terms">Terms</a></li>
+                <li><a href="privacy.html" title="Privacy">Privacy</a></li>
+              </ul>
+        </div>
+        
+      
+      </nav>
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <img src="img/Asset.png" alt="dot1" id="dot1">
+        <img src="img/Asset.png" alt="dot2" id="dot2">
+        <h1>CSS Craft</h1>
+        <p>
+          The Best Code Generator For Neumorphism, Glassmorphism, Gradient
+          Selector And Other CSS Stuff
+        </p>
+        <!-- <a href="#tools" class="btn">Tools</a> -->
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- Tools section starts-->
+         
+      <section class="slider">
+    <h1 class="heading" id="head" style="z-index:10;">Tools</h1>
+        
+    <div class="slide-container swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-content">
+                <img src="img/Glassmorphism.webp" alt="Glassmorphism" class="card-img" />
+            </div>
+                <div class="card-content">
+              <h2 class="tool">Glassmorphism</h2>
+              <button onclick="window.location.href='glass.html'" class="button">View Tool</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <div class="card-image">
+                <img src="img/Neumor.webp" alt="Neumorphism" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="tool">Neumorphism</h2>
+              <button onclick="window.location.href='https://cssbuild.netlify.app/neumorphism.html'" class="button">View Tool</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <img src="img/Gradient.webp" alt="Gradient" class="card-img" />
+            </div>
+            <div class="card-content">
+              <h2 class="tool">Gradient Selector</h2>
+              <button onclick="window.location.href='https://cssbuild.netlify.app/gradient.html'" class="button">View Tool</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <div class="card-image">
+                <img src="img/color palette.webp" alt="Color" class="card-img">
+              </div>
+            </div>
+             <div class="card-content">
+              <h2 class="tool">Color</h2>
+              <button onclick="window.location.href='https://cssbuild.netlify.app/colorpalette.html'" class="button">View Tool</button>
+            </div>
+          </div>
+
+      </div>
+
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    </section>
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+      <h1 class="heading" id="head" style="z-index:10">About</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-palette"></i>
+          <h3>Design Before Code</h3>
+          <p>
+            Get the template for your design without proper code with out tool
+            generators
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-border-style"></i>
+          <h3>Multiple Design Styles and tools</h3>
+          <p>
+            choose from multiple design styles of your wish for your inspiration
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-code"></i>
+          <h3>Get Code In Single click</h3>
+          <p>
+            Get the code for design to implement in your project in single click
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- about section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+
+      <h1 class="credit">© 2022 CSS Crafts All Rights Reserved!</h1>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- script part  -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+    var swiper = new Swiper(".slide-content", {
+  slidesPerView: 3,
+  spaceBetween: 45,
+  loop: true,
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    950: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+    function $(element){
+        return document.querySelector(element)
+    }
+
+    $('.ham').onclick = () =>{
+        $('.ham').classList.toggle('close')
+        $('.nav-area').classList.toggle('open')
+    }
+
+    </script>
+  </body>
+</html>

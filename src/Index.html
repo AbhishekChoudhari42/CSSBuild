@@ -1,35 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta tool="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Craft</title>
-
+    
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     
     <link rel="shortcut icon" type="image/png/webp" href="img/logo.webp">
-    
-    <meta name="description" content="CSS Crafts consist of CSS Designing tool Generators such as Glassmorphism, Neumorphism and many more">
 
-    <meta name="keywords" content="Neumorphism , Glassmorphism , Gradient Selector , Color palette, Random color palette generator, Neumorphism generator, Glassmorphism generator, Gradient generator">
-
-    <!-- font awesome cdn link  -->
-    <link
+        <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Navbar css file link  -->
-    <link rel="stylesheet" href="css/nav.css" />
-
-    <!-- Footer css file link -->
-    <link rel="stylesheet" href="css/footer.css">
-  </head>
-  <body>
-    <!-- header section starts  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
     <nav>
         <div class="logo">
           <a class="logo_link" href="index.html">
@@ -56,31 +44,51 @@
         
       
       </nav>
-    <!-- header section ends -->
-
-    <!-- home section starts  -->
-
-    <section class="home" id="home">
-      <div class="content">
+     
+        <section class="main-section" >
+      <!-- <div class="content">
         <img src="img/Asset.png" alt="dot1" id="dot1">
-        <img src="img/Asset.png" alt="dot2" id="dot2">
-        <h1>CSS Craft</h1>
-        <p>
-          The Best Code Generator For Neumorphism, Glassmorphism, Gradient
-          Selector And Other CSS Stuff
-        </p>
-        <!-- <a href="#tools" class="btn">Tools</a> -->
-      </div>
-    </section>
+        <img src="img/Asset.png" alt="dot2" id="dot2"> -->
+        <h1 class="title">CSS Craft</h1>
+        <p class="subtitle">The Best Code Generator For Neumorphism, Glassmorphism, Gradient
+            Selector And Other CSS Stuff</p>
+        <!-- </div> -->
+      </section>
 
-    <!-- home section ends -->
 
-    <!-- Tools section starts-->
-         
+      <!-- section style -->
+
+      <!-- <style>
+        @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+
+      </style> -->
+
+      <!-- nav  style -->
+      <style>
+        @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+
+       
+
+
+
+
+    /* media queries */
+
+    @media (max-width: 720px) {
+
+       }
+
+
+       </style>
+
+        <!-- Swiper Section  -->
+
       <section class="slider">
-    <h1 class="heading" id="head" style="z-index:10;">Tools</h1>
+    <h2 class="heading" id="head" style="z-index:10;">Tools</h2>
         
-    <div class="slide-container swiper">
+    <div class="slide-container swiper" style="bottom:68px">
       <div class="slide-content">
         <div class="card-wrapper swiper-wrapper">
           <div class="card swiper-slide">
@@ -132,10 +140,10 @@
     </div>
     </section>
 
-    <!-- about section starts  -->
+    <!-- About Section -->
 
-    <section class="about" id="about">
-      <h1 class="heading" id="head" style="z-index:10">About</h1>
+        <section class="about" id="about">
+      <h2 class="heading" id="head">About</h2>
 
       <div class="box-container">
         <div class="box">
@@ -163,30 +171,72 @@
       </div>
     </section>
 
+    <!-- About section style -->
+
+    <style>
+  .about {
+  min-height: 80vh;
+  background-color: #ffffff;
+}
+
+.about .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about .box-container .box {
+  margin: 1rem;
+  border-radius: 0.7rem;
+  text-align: center;
+  background: rgba(237, 23, 111, 0.05);
+  padding: 1rem;
+  flex: 1 1 30rem;
+  cursor: pointer;
+  height: 320px;
+  width: 250px;
+}
+
+.about .box-container .box i {
+  color: #f53f8b;
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.about .box-container .box h3 {
+  color: #272d3b;
+  font-size: 1.4rem;
+}
+
+.about .box-container .box p {
+  color: #666;
+  font-size: 1.1rem;
+  padding: 1rem;
+}
+
+.about .box-container .box:hover {
+  background: linear-gradient(90deg, #dbe3ffff, #f3e0ffff);
+}
+
+.about .box-container .box:hover > * {
+  color: rgb(251, 251, 251);
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+    </style>
 
 
-    <!-- about section ends -->
 
-    <!-- footer section starts  -->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <section class="footer">
-      <div class="share">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-linkedin"></a>
-      </div>
+<script>
 
-      <h1 class="credit">© 2022 CSS Crafts All Rights Reserved!</h1>
-    </section>
-
-    <!-- footer section ends -->
-
-    <!-- script part  -->
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <script>
     var swiper = new Swiper(".slide-content", {
   slidesPerView: 3,
   spaceBetween: 45,
@@ -217,6 +267,8 @@
   },
 });
 
+
+
     function $(element){
         return document.querySelector(element)
     }
@@ -226,6 +278,6 @@
         $('.nav-area').classList.toggle('open')
     }
 
-    </script>
-  </body>
+</script>
+</body>
 </html>
