@@ -439,8 +439,12 @@
        }
 
        @media (max-width: 600px){
-                h1{
+            .main-section{
+                min-height:70vh;
+            }      
+        h1{
             font-size: 5.3rem;
+            margin-bottom:4rem;
             }
 
           h1:hover{
@@ -460,11 +464,15 @@
             bottom:11px;
             right:-25px;
         }
+
+        
         .subtitle {
             font-size: 1.2rem;
             min-width: 400px;
-            margin: 20px 0 0 20px;
+            margin: 20px 0 24px 20px;
         }
+
+
         .logo img{
             margin-right:209px;
         }
