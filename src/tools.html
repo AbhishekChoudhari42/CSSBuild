@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/landingpage.css">
     <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="shortcut icon" type="image/png/webp" href="img/logo.webp">
    <!-- scripts -->
@@ -24,58 +25,35 @@
 padding-top: 50px;
 }
                                              
-
-.footer {
-  text-align: center;
-  background: #272d3b;
-  padding-top: 10px;
-	position:fixed;
-}
-
-.footer .share {
-  padding-top: 10px;
-}
-
-.footer .share a {
-  height: 4rem;
-  width: 4rem;
-  line-height: 4rem;
-  background: #eee;
-  color: #272d3b;
-  border-radius: 50%;
-  font-size: 2rem;
-  margin: 0.3rem;
-}
-
-.footer .share a:hover {
-  color: #fff;
-  background: linear-gradient(90deg, #a8baf9, #d59cf9);
-}
-.footer .credit {
-  color: #eee;
-  padding: 2rem 1rem;
-  font-weight: normal;
-  font-size: 2rem;
-}
-	
 </style>
 
 <body>
-	    <nav>
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <i class="fa fa-bars"></i>
-      </label>
-      <img src="img/logo.webp" class="logo" alt="logo">
-      <ul class="nav_links">
-        <li><a href="index.html" title="Home">Home</a></li>
-        <li><a href="tools.html" title="Tools">Tools</a></li>
-        <li><a href="#" title="About">About</a></li>
-        <li><a href="terms.html" title="Terms">Terms</a></li>
-	<li><a href="privacy.html" title="Privacy">Privacy</a></li>
-        </ul>
-    </nav>
-
+    <nav>
+        <div class="logo">
+          <a class="logo_link" href="index.html">
+          <img src="img/logo.webp"  alt="logo">
+          </a>
+          <h2>CSS Craft</h2>
+        </div>
+  
+        <div class="ham">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+        <div class="nav-area">
+            <ul class="nav_links">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="tools.html" title="Tools">Tools</a></li>
+                <li><a href="#" title="About">About</a></li>
+                <li><a href="terms.html" title="Terms">Terms</a></li>
+                <li><a href="privacy.html" title="Privacy">Privacy</a></li>
+              </ul>
+        </div>
+        
+      
+      </nav>
     <section  class="flex-r main">
 
        <div class="card-container">
@@ -114,7 +92,7 @@ padding-top: 50px;
         <a href="#" class="fab fa-instagram"></a>
         <a href="#" class="fab fa-linkedin"></a>
       </div>
-      <h4 class="credit">© 2022 CSS Crafts All Rights Reserved!</h1>
+      <h2 class="credit">© 2022 CSS Crafts All Rights Reserved!</h2>
     </section>
 	
     

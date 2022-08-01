@@ -10,65 +10,41 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/gradient.css">
     <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/style.css">	
+    <link rel="stylesheet" href="./css/footer.css">	
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="shortcut icon" type="image/png/webp" href="img/logo.webp">
 <script defer src="./javascript/gradient.js"></script>
 <!-- <script src="./javascript/main.js"></script> -->
 </head>
 <body>
-	<style>
-       nav{
-      width: 100vw;
-      display:flex;
-      justify-content: space-between;
-      align-items: center;
-
-     }
-     .logo{
-      width:200px;
-      display: flex;
-      justify-content:center;
-      align-items: center;
-     }
-     .logo img{
-      width:42px;
-      height:42px;
-     }
-     .logo h2{
-      width: 100%;
-      margin-left: 1rem;
-      font-size: 3rem;  
-      font-weight: 600;
-    
-    }
-	</style>
     <!-- navigation -->
 
-	<nav>
- <div class="logo">
-
-        <img src="img/logo.webp" alt="logo">
-        <h2>CSS Craft</h2>
-      </div>
-
-      <div class="ham">
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="fa fa-bars"></i>
-        </label>
-      </div>
+    <nav>
+        <div class="logo">
+          <a class="logo_link" href="index.html">
+          <img src="img/logo.webp"  alt="logo">
+          </a>
+          <h2>CSS Craft</h2>
+        </div>
+  
+        <div class="ham">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+        <div class="nav-area">
+            <ul class="nav_links">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="tools.html" title="Tools">Tools</a></li>
+                <li><a href="#" title="About">About</a></li>
+                <li><a href="terms.html" title="Terms">Terms</a></li>
+                <li><a href="privacy.html" title="Privacy">Privacy</a></li>
+              </ul>
+        </div>
+        
       
-      
-      <ul class="nav_links">
-        <li><a href="index.html" title="Home">Home</a></li>
-        <li><a href="tools.html" title="Tools">Tools</a></li>
-        <li><a href="#" title="About">About</a></li>
-        <li><a href="terms.html" title="Terms">Terms</a></li>
-        <li><a href="privacy.html" title="Privacy">Privacy</a></li>
-      </ul>
-    
-    </nav>
+      </nav>
 
 
 <div class="main-container flex-r">
@@ -142,7 +118,7 @@
 
 </div>
     
-    <section class="footer">
+        <section class="footer">
       <div class="share">
         <a href="#" class="fab fa-facebook-f"></a>
         <a href="#" class="fab fa-twitter"></a>
@@ -150,7 +126,7 @@
         <a href="#" class="fab fa-linkedin"></a>
       </div>
 
-      <h1 class="credit">© 2022 CSS Crafts All Rights Reserved!</h1>
+      <h2 class="credit">© 2022 CSS Crafts All Rights Reserved!</h2>
     </section>
 
 </body>
