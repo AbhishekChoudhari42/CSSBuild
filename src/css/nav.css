@@ -24,6 +24,7 @@
         width:auto;
         height:100%;
         overflow-x: none;
+        padding-top:3.1rem;
         }
 
         nav{
@@ -57,6 +58,7 @@
          background:linear-gradient(90deg, #dbe3ffff, #f3e0ffff);
          backdrop-filter: blur(20px);
          border-bottom:1px solid #e7ecff;
+         /* margin-bottom: 1500px; */
         }
 
         .logo{
