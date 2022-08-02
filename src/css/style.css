@@ -289,16 +289,27 @@
 
 /* Media Queries */
 
-
+  @media (max-width: 760px){
+   .main-section{
+        font-size:6rem;
+    }
+    /*  .subtitle {
+            font-size: 1.9rem;
+            min-width: 300px;
+            /* margin: 10px 0 50px 20px; 
+            margin-bottom: 90px;
+        } 
+  } */
  
 
        @media (max-width: 600px){
             .main-section{
                 min-height:70vh;
+                align-items: flex-start;
             }      
         h1{
             font-size: 5.3rem;
-            margin-bottom:1.5rem;
+            /* margin-bottom:1.5rem; */
             }
 
           h1:hover{
