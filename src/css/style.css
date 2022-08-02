@@ -293,13 +293,7 @@
    .main-section{
         font-size:6rem;
     }
-    /*  .subtitle {
-            font-size: 1.9rem;
-            min-width: 300px;
-            /* margin: 10px 0 50px 20px; 
-            margin-bottom: 90px;
-        } 
-  } */
+  }
  
 
        @media (max-width: 600px){
@@ -368,4 +362,3 @@
         }
         
         }
-    }
