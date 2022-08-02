@@ -32,7 +32,6 @@
             flex-direction: column;
 
             background-image:var(--gradient0);
-            position:relative;
         }
         h1{
             font-size: 7rem;
@@ -77,24 +76,7 @@
             width: 44vw;
             min-width: 300px;
             text-align:center;
-            position:absolute;
         }
-
-            /*  Nav Menu */
-
-    /* *{
-            margin:0;
-            padding:0;
-            box-sizing: border-box;
-            font-family: 'poppins';
-        } */
-        body{
-            /* width:100vw; */
-            height:100%;
-            overflow-x: none;
-        }
-
-
 
         /* swiper style */
 .slider {
@@ -180,6 +162,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .button:hover {
   background: #265df2;
 }
@@ -190,19 +173,24 @@
   opacity: 0.6;
   font-weight: 700;
 }
+
 .swiper-navBtn:hover {
   color: #5d30ef;
 }
+
 .swiper-navBtn::before,
 .swiper-navBtn::after {
   font-size: 35px;
 }
+
 .swiper-button-next {
   right: 0;
 }
+
 .swiper-button-prev {
   left: 0;
 }
+
 .swiper-pagination-bullet {
   background-color: #aa6ff3;
   opacity: 1;
@@ -291,22 +279,17 @@
 
 /* Media Queries */
 
-  @media (max-width: 760px){
+  /* @media (max-width: 760px){
    .main-section{
         font-size:6rem;
     }
-  }
+  } */
  
 
        @media (max-width: 600px){
-            /* .main-section{
-                min-height:70vh;
-                align-items: flex-start;
-            }       */
         h1{
             font-size: 5.3rem;
-            /* margin-bottom:1.5rem; */
-            padding-bottom:17rem;
+            padding-bottom:5rem;
             }
 
           h1:hover{
@@ -323,17 +306,17 @@
         h1::after{
             width: 45px;
             height:39px;
-            bottom:280px;
-            right:-28px;
+            bottom:93px;
+            right:-29px;
         }
 
 
         .subtitle {
             font-size: 1.3rem;
             min-width: 400px;
-            /* margin: 10px 0 50px 20px; */
-            margin-bottom: 90px;
-            top:230px;
+            /* margin-bottom: 90px;
+            top:230px; */
+            transform: translate(2px,-60px);
         }
 
        }
