@@ -279,12 +279,15 @@
 
 /* Media Queries */
 
-  /* @media (max-width: 760px){
-   .main-section{
-        font-size:6rem;
+  @media (max-width: 670px){
+    .tool{
+      font-size:1.4rem;
     }
-  } */
- 
+    .button{
+      font-size:1.2rem;
+    }
+  }
+      
 
        @media (max-width: 600px){
         h1{
