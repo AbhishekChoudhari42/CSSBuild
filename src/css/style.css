@@ -53,7 +53,7 @@
             content: " ";
             width: 51px;
             height:41px;
-            background-image: url('/src/img/Asset.png');
+            background-image: url('/CSSBuild/src/img/Asset.png');
             background-size: cover;
             z-index: -1;
             top:23px;
@@ -65,7 +65,7 @@
             content: " ";
             width: 51px;
             height:41px;
-            background-image: url('/src/img/Asset.png');
+            background-image: url('/CSSBuild/src/img/Asset.png');
             background-size: cover;
             z-index: -1;
             bottom:20px;
