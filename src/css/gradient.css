@@ -341,9 +341,9 @@ border: 2px solid var(--dark1);
     border-radius: 8px;
     bottom: 0;
     z-index: 10;
-    transform: translateY(100%);
+    transform: translateY(50rem);
     position: absolute;
-    transition: 1s;
+    transition: 0.5s;
 }
 .code-display.active{
     transform: translateY(0%);
@@ -358,9 +358,6 @@ border: 2px solid var(--dark1);
     border-radius: 0.5rem;
     max-height: fit-content;
     padding: 0.5rem;
-
-
-
 }
 
 .copy-code{
